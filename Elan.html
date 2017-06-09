@@ -1,11 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Elan</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <title>Elan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: #fcfcfc;
+        }
+
+        .main {
+            width: 600px;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+
+        .brand {
+            text-align: center;
+        }
+
+        .brand-name {
+            margin: 0;
+            font-family: 'Satisfy', cursive;
+            font-weight: lighter;
+            -webkit-font-smoothing: antialiased;
+            font-size: 50px;
+            padding: 30px;
+            color: #404040;
+            text-shadow: 1px 1px 2px #353638;
+            letter-spacing: 3px;
+        }
+
+        .maincontent {
+            text-align: center;
+            color: #595959;
+        }
+
+        .pages {
+            display: inline-block;
+            margin: 20px 20px 7px 20px;
+        }
+
+        .firsthr {
+            width: 90%;
+        }
+
+        .newin {
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+
+        }
+
+        .newin div:nth-child(2) {
+            font-size: 18px;
+            font-weight: 600;
+            color: #737373;
+            letter-spacing: 1px;
+            margin: 10px 0 20px 0;
+        }
+
+        .new {
+            font-size: 30px;
+            margin-top: 30px;
+            color: #4d4d4d;
+            letter-spacing: 3px;
+        }
+
+        .new h3 {
+            margin: 10px;
+        }
+
+        .jumbotron {
+            padding: 20px 30px;
+            text-align: center;
+        }
+
+        .jumbotron a {
+            display: inline-block;
+            text-decoration: none;
+            margin: 25px 25px 20px 25px;
+            padding: 10px 30px;
+            background-color: #d55d5d;
+            border: none;
+            border-radius: 4px;
+            color: #fcfcfc;
+            font-size: 16px;
+            letter-spacing: 1.5px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+        }
+
+        .secondhr {
+            width: 100%;
+        }
+
+        .customer {
+            padding: 20px 20px 0 30px;
+            letter-spacing: 0.1px;
+        }
+        .customer b{
+            font-size: larger;
+            font-family: Bavro;
+            letter-spacing: 1px;
+        }
+        .week{
+            font-family: 'Pacifico', cursive;
+            font-size: larger;
+        }
+    </style>
 </head>
 <body>
-<div style="width:60%;margin:auto;">
-
+<div class="main">
+    <div class="brand">
+        <h2 class="brand-name">
+            Elan
+        </h2>
+    </div>
+    <div>
+        <div class="maincontent">
+            <div class="pages">NEW IN</div>
+            <div class="pages">CLOTHING</div>
+            <div class="pages">ACCESSORIES</div>
+            <div class="pages">FOOTWEAR</div>
+        </div>
+        <hr class="firsthr">
+    </div>
+    <div class="newin">
+        <div class="new">
+            <h3>NEW&nbsp&nbspIN</h3>
+        </div>
+        <div>
+            Our Autumn collection is now online
+        </div>
+    </div>
+    <div class="jumbotron">
+        <img src="Newdress.jpg" alt="New Dress In Store!" width="100%">
+        <a href="xyz.com">
+            CHECK OUR COLLECTION HERE
+        </a>
+        <hr class="secondhr">
+    </div>
+    <div class="customer">
+        <b> Hi John,</b><br><br>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, cupiditate earum fuga fugiat hic
+            laborum omnis quas quisquam. Expedita, quo.
+        </div>
+        <br>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque cupiditate eius modi provident.
+            Aperiam aspernatur delectus dignissimos dolore, doloribus earum ipsa ipsam necessitatibus nobis non nulla
+            sequi soluta totam.
+        </div>
+        <br>
+        <div class="week">
+            Have A Great Week
+        </div>
+        <br>
+        <hr class="secondhr">
+    </div>
+    <div class="products">
+        <div class="row">
+            <div class="column-6"><img src="" alt=""></div>
+            <div class="column-6"><img src="" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="column-6"><img src="" alt=""></div>
+            <div class="column-6"><img src="" alt=""></div>
+        </div>
+        <div class="row">
+            <div class="column-6"><img src="" alt=""></div>
+            <div class="column-6"><img src="" alt=""></div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
