@@ -8,13 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
     <title>Elan</title>
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: 'Nunito', sans-serif;
-            background-color: #fcfcfc;
+            background-color: #f7f7f7;
+            box-sizing: border-box;
         }
 
         .text-center {
@@ -24,23 +26,20 @@
         .main {
             width: 600px;
             margin: auto;
-            background-color: antiquewhite;
+            background-color: #faebd7;
         }
 
-        .brand {
-            text-align: center;
-        }
 
         .brand-name {
             margin: 0;
-            font-family: 'Satisfy', cursive;
-            font-weight: lighter;
+            font-family: 'Handlee', cursive;
+            font-weight: 100;
             -webkit-font-smoothing: antialiased;
-            font-size: 50px;
+            font-size: 60px;
             padding: 30px 30px 10px 30px;
             color: #404040;
-            text-shadow: 1px 1px 2px #353638;
-            letter-spacing: 3px;
+            text-shadow: 1px 1px 2px #686868;
+            letter-spacing: 5px;
         }
 
         .maincontent {
@@ -52,7 +51,7 @@
 
         .pages {
             display: inline-block;
-            margin: 20px 20px 7px 20px;
+            padding: 0px 20px 0px 20px;
         }
 
         .firsthr {
@@ -109,9 +108,6 @@
             background-color: #d55d5d;
         }
 
-        .secondhr {
-            width: 100%;
-        }
 
         .customer {
             padding: 20px 20px 0 30px;
@@ -136,10 +132,14 @@
             font-size: 14px;
             letter-spacing: 3px;
         }
-
-        .products img {
+        .productimage {
             border-radius: 5px;
         }
+        .product {
+            text-decoration: none;
+            color: black;
+        }
+
 
         .products h3 {
             text-transform: uppercase;
@@ -152,7 +152,6 @@
             font-size: 35px;
         }
         .services div{
-            display: inline-block;
             width: 32%;
         }
         i{
@@ -163,35 +162,133 @@
             width: 100%;
             text-transform: uppercase;
         }
-        .social img{
-            width: 7%;
+        span{
+            display: inline-block;
+            margin-left: -30px;
         }
-        .social span{
-            margin: 0px 20px;
+        span a{
+            margin-left: 30px;
         }
+        span a img{
+            width: 35px;
+        }
+
         .address p{
                 margin: 0;
             font-size: smaller;
             line-height: 23px;
         }
+        .block1{
+            display: inline-block;
+            position: relative;
+            width: 250px;
+            margin-left: 30px;
+        }
+        .block2{
+                width: 250px;
+                display: inline-block;
+                padding: 15px;
+        }
+        .truck{
+            vertical-align: top;
+            margin-left: 5px;
+        }
+        /* Media Queries Starts Here:*/
+        @media only screen and (max-width: 620px) {
+            .main{
+                width: 100%;
+            }
+            .brand-name{
+                padding-bottom: 0;
+            }
+            .pages{
+                padding: 0 5px;
+                margin-bottom: 10px;
+                font-size: smaller;
+
+            }
+            .vertical{
+                display: none;
+            }
+
+            .maincontent{
+                float: left;
+                width: 100%;
+                min-width: 0px;
+                box-sizing: border-box;
+            }
+            .block1{
+                display: block;
+                width: 90%;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+            .block2{
+                display: block;
+                width: 90%;
+                margin: auto;
+            }
+            .services div{
+                display: inline-block;
+                width: 100%;
+            }
+            .payment{
+                display: none !important;
+            }
+            .truck{
+                margin-left: 0;
+            }
+            .services div {
+                display: inline-block;
+                width: 40%;
+            }
+            span a{
+                margin-left: 10px;
+            }
+            .link{
+                font-size: 15px;
+            }
+        }
+        @media only screen and (min-width: 620px) {
+            .services div {
+                display: inline-block;
+            }
+            .productimage:hover{
+                width: 103%;
+            }
+
+            .productimage{
+                border-radius: 5px;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+        }
+        @media only screen and (max-width: 310px){
+            .main{
+                width: 310px;
+            }
+
+        }
+
     </style>
 </head>
 <body>
 <div class="main">
-    <div class="brand">
+    <div class="brand text-center">
         <h2 class="brand-name">
             Elan
         </h2>
     </div>
-    <div>
+    <br>
+    <div class="mainc">
         <div class="maincontent">
             <div class="pages">NEW IN</div>
             <div class="pages">CLOTHING</div>
             <div class="pages">ACCESSORIES</div>
             <div class="pages">FOOTWEAR</div>
         </div>
-        <hr class="firsthr">
     </div>
+    <hr class="firsthr" style="border-width: 0.5px;border-color: #4d4d4d; opacity: 0.4; margin-top: 15px;">
     <div class="newin">
         <div class="new">
             <h3>NEW&nbsp&nbspIN</h3>
@@ -223,45 +320,53 @@
             Have A Great Week
         </div>
         <br>
-        <hr class="secondhr">
     </div>
+    <hr class="secondhr" width="90%">
     <div class="producthead">
         Get Autumn ready in these trendy essentials!
     </div>
     <br>
 
     <div class="products">
-        <div style="display: inline-block;position: relative;width: 250px;margin-left: 30px;">
+        <div class="block1">
             <div style="display: inline-block;margin-bottom: 50px;">
-                <img src="163H.jpg" alt="top" width="100%">
+                <a href="sweater.com" style="text-decoration: none; color: black;" class="product">
+                <img src="163H.jpg" alt="top" width="100%" class="productimage">
                 <div class="text-center" style="margin-top: 10px;">
                     <h3 style="margin: 0;">Lorem ipsum Sweater</h3>
                     <p style="margin: 0;">$X</p>
                 </div>
+                </a>
             </div>
-            <div>
-                <img src="pinkdress.jpeg" alt="pinkdress" width="100%">
+            <div class="product">
+                <a href="pinkdress.com" style="text-decoration: none; color: black;" class="product">
+                <img src="pinkdress.jpeg" alt="pinkdress" width="100%" class="productimage" >
                 <div class="text-center" style="margin-top: 10px;">
                     <h3 style="margin: 0;">Lorem ipsum Dress</h3>
                     <p style="margin: 0;">$Y</p>
                 </div>
+                </a>
             </div>
         </div>
-        <img src="vertical1.png" alt="verticalline" style="margin-left: 15px; vertical-align: top;">
-        <div style="width: 250px; display: inline-block; padding: 15px;">
+        <img src="vertical1.png" alt="verticalline" style="margin-left: 15px; vertical-align: top;" class="vertical">
+        <div class="block2">
             <div style="display: inline-block; margin-bottom: 50px;">
-                <img src="Top.jpg" alt="top" width="100%">
+                <a href="top.com" style="text-decoration: none; color: black;" class="product">
+                <img src="Top.jpg" alt="top" width="100%" class="productimage">
                 <div class="text-center" style="margin-top: 10px;">
                     <h3 style="margin: 0;">Lorem ipsum Blouse</h3>
                     <p style="margin: 0;">$Z</p>
                 </div>
+                </a>
             </div>
             <div>
-                <img src="reddress.jpeg" alt="pinkdress" width="100%">
+                <a href="reddress.com" style="text-decoration: none; color: black;" class="product">
+                <img src="reddress.jpeg" alt="pinkdress" width="100%" class="productimage">
                 <div class="text-center" style="margin-top: 10px;">
                     <h3 style="margin: 0;">Lorem ipsum Dress</h3>
                     <p style="margin: 0;">$W</p>
                 </div>
+                </a>
             </div>
         </div>
     </div>
@@ -277,12 +382,12 @@
             <br>
             <div style="margin-top: 20px;">Free Standard <br>Delivery Worldwide</div>
         </div>
-        <div style="vertical-align: top;margin-left: 5px;" >
+        <div class="truck">
             <i class="fa fa-truck"></i>
             <br>
             <div style="margin-top: 20px;">Free Returns<br> On All Orders</div>
         </div>
-        <div style="vertical-align: top;">
+        <div style="vertical-align: top;" class="payment">
             <i class="fa fa-credit-card"></i>
             <br>
             <div>Secure Payments</div>
@@ -290,15 +395,15 @@
     </div>
     <hr class="secondhr" style="width: 93%;">
     <br>
-    <div class="footer">
-        <div class="social text-center">
-            <span><a href="fb.com" target="_blank"><img src="facebook.png" alt="Facebook link"></a></span>
-            <span><a href="tw.com" target="_blank"><img src="twitter.png" alt="Twitter link"></a></span>
-            <span><a href="in.com" target="_blank"><img src="instagram.png" alt="Instagram link"></a></span>
-            <span><a href="li.com" target="_blank"><img src="linkedin.png" alt="Linkedin link"></a></span>
-            <span><a href="pi.com" target="_blank"><img src="pinterest.png" alt="Pinterest link"></a></span>
-        </div>
-        <br>
+    <div class="footer text-center">
+        <span class="social text-center">
+            <a href="fb.com" target="_blank"><img src="facebook.png" alt="Facebook link"></a>
+            <a href="tw.com" target="_blank"><img src="twitter.png" alt="Twitter link"></a>
+            <a href="in.com" target="_blank"><img src="instagram.png" alt="Instagram link"></a>
+            <a href="li.com" target="_blank"><img src="linkedin.png" alt="Linkedin link"></a>
+            <a href="pi.com" target="_blank"><img src="pinterest.png" alt="Pinterest link"></a>
+        </span>
+        <br><br>
         <div class="text-center address">
             <p>CONTACT US : xyz@gmail.com , MOBILE : 94XYZW2323</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quas.</p>
